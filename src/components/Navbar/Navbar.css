@@ -1,0 +1,67 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: background-color 0.5s ease;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.navbar--scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 4px blue;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar__avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+
+.navbar--black {
+  background-color: #111;
+}
+
+.navbar__logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.navbar__avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Optional: smooth fade-in on scroll */
+@keyframes fadeIn {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #111;
+  }
+}
+
+
+
